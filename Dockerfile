@@ -1,7 +1,7 @@
 FROM r-base:3.6.3
 COPY . /usr/local/src
 WORKDIR /usr/local/src
-EXPOSE 8082
+EXPOSE 8082/tcp
 
 # System dependencies
 RUN apt-get update && apt-get install -y \ 

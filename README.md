@@ -6,6 +6,14 @@
 
 TODO
 
+## Docker
+
+This repository is available as a Docker image:
+
+```
+docker run fercgomes/easycov-pred
+```
+
 # Contribution
 
 TODO: contribution guide
