@@ -7,19 +7,23 @@
 #    https://www.rplumber.io/
 #
 
-library(plumber)
-library(readr)
-library(plyr)
-library(tidyverse)
-library(DMwR)
-library(e1071)
-library(pROC)
-library(jsonlite)
-library(caret)
-library(rpart)
-library(Rmisc)
-library(boot)
-library(dplyr)
+# library(plumber)
+# library(readr)
+# library(plyr)
+# library(tidyverse)
+# library(DMwR)
+# library(e1071)
+# library(pROC)
+# library(jsonlite)
+# library(caret)
+# library(rpart)
+# library(Rmisc)
+# library(boot)
+# library(dplyr)
+
+list.of.packages <- c("plumber", "readr", "plyr", "tidyverse", "DMwR", "e1071", "pROC", "jsonlite", "caret", "rpart", "Rmisc", "boot", "dplyr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
 
 #* @apiTitle Plumber Example API
 
